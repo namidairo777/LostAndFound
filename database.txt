@@ -1,0 +1,31 @@
+
+
+create table lostthings(
+id int primary key identity(1,1),
+name varchar(50),
+category int,
+email varchar(50),
+qq varchar(50),
+title varchar(50),
+detail varchar(50),
+udateTime datetime,
+status int
+)
+create table pickupthings(
+id int primary key identity(1,1),
+name varchar(50),
+category int,
+email varchar(50),
+qq varchar(50),
+title varchar(50),
+detail varchar(50),
+udateTime datetime,
+status int
+)
+
+create table comments(
+id int primary key identity(1,1),
+name varchar(50),
+commenter varchar(50),
+context varchar(max)
+)

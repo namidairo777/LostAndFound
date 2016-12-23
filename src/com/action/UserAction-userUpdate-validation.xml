@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 指定Struts 2数据校验的规则文件的DTD信息 -->
+<!DOCTYPE validators PUBLIC 
+	"-//OpenSymphony Group//XWork Validator 1.0.3//EN"
+	"http://www.opensymphony.com/xwork/xwork-validator-1.0.3.dtd">
+<!-- Struts 2校验文件的根元素 -->
+<validators>   
+	<validator type="requiredstring">
+        <param name="fieldName"> user.name</param>
+        <param name="trim">true</param>
+        <message>用户名不能为空</message>
+    </validator>  
+     <validator type="requiredstring">
+        <param name="fieldName">user.password</param>
+        <message>密码不能为空</message>
+    </validator>    
+    <validator type="requiredstring">
+        <param name="fieldName">confirmPass</param>
+        <message>再次输入密码不能为空</message>
+    </validator>  
+    <validator type="stringlength">
+        <param name="fieldName">user.password</param>
+        <param name="minLength">6</param>
+        <message>密码不得小于${minLength}位</message>
+    </validator>
+    <validator type="stringlength">
+        <param name="fieldName">user.password</param>
+        <param name="maxLength">20</param>
+        <message>密码不得大于${maxLength}位</message>
+    </validator>
+    <validator type="expression">
+        <param name="expression"><![CDATA[ (user.password ==confirmPass)]]></param>
+        <message>两次输入的密码必须完全一致！</message>
+    </validator>
+     <validator type="expression" >
+        <param name="expression"><![CDATA[ (user.password != '123456')]]></param>
+        <message>密码太简单</message>
+    </validator>
+    <validator type="requiredstring">
+        <param name="fieldName">user.answer</param>
+        <param name="trim">true</param>
+        <message>密保答案不能为空</message>
+    </validator>
+     <validator type="email">
+        <param name="fieldName">user.mail</param>
+        <message>邮箱网址格式不正确</message>
+    </validator>
+   
+</validators>

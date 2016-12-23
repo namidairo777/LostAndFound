@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<!-- 用户请求user -->
+<struts>
+	<package name="user" namespace="/" extends="struts-default">
+		<action name="userRegister" class="com.action.UserAction" method="register">
+			<result name="success" type="redirect">index.jsp</result>
+			<result name="error" type="dispatcher">index.jsp</result>
+			<result name="input" type="dispatcher">registerForm.jsp</result>
+		</action>
+		<action name="userLogin" class="com.action.UserAction" method="login">
+			<result name="success" type="redirectAction">lostList</result>
+			<result name="error" type="dispatcher">index.jsp</result>
+			<result name="input" type="dispatcher">index.jsp</result>
+		</action>
+		<action name="userLogout" class="com.action.UserAction" method="logout">
+			<result name="success" >index.jsp</result>
+		</action>
+		<action name="userUpdate" class="com.action.UserAction" method="update">
+			<result name="success">index.jsp</result>
+			<result name="input">updateUserForm.jsp</result>
+			<result name="error">updateUserForm.jsp</result>
+		</action>
+		
+<!-- 寻物 -->
+
+		<action name="lostCreate" class="com.action.LostAction" method="create">
+			<result type="redirectAction" name="success">lostList</result>
+			<result name="input">newLostForm.jsp</result>
+			<result name="error">newLostForm.jsp</result>
+		</action>
+		<action name="lostUpdate" class="com.action.LostAction" method="update">
+			<result type="redirectAction" name="success">lostList</result>
+			<result name="input">newLostForm.jsp</result>
+			<result name="error">newLostForm.jsp</result>
+		</action>
+		<action name="lostList" class="com.action.LostAction" method="listAll">
+			<result name="success">listAll.jsp</result>
+			<result name="input">newLostForm.jsp</result>
+			<result name="error">newLostForm.jsp</result>
+		</action>
+		<action name="lostListOne" class="com.action.LostAction" method="listOne">
+			<result type="redirectAction" name="success">commentList</result>
+			<result name="input">listAll.jsp</result>
+			<result name="error">listAll.jsp</result>
+		</action>
+		<action name="listOne" class="com.action.LostAction" method="listOne">
+			<result name="success">updateLost.jsp</result>
+			<result name="input">listAll.jsp</result>
+			<result name="error">listAll.jsp</result>
+		</action>
+		<action name="lostFinish" class="com.action.LostAction" method="finish">
+			<result type="redirectAction" name="success">lostList</result>
+			<result name="input">listAll.jsp</result>
+			<result name="error">listAll.jsp</result>
+		</action>
+		<action name="lostDelete" class="com.action.LostAction" method="delete">
+			<result type="redirectAction" name="success">lostList</result>
+			<result name="input">listAll.jsp</result>
+			<result name="error">listAll.jsp</result>
+		</action>
+		
+		<action name="lostListMe" class="com.action.LostAction" method="listMe">
+			<result type="redirectAction" name="success">lostList</result>
+			<result name="input">newLostForm.jsp</result>
+			<result name="error">newLostForm.jsp</result>
+		</action>
+		
+		
+		
+<!-- 失物招领 -->
+		<action name="findCreate" class="com.action.FindAction" method="create">
+			<result type="redirectAction" name="success">lostList</result>
+			<result name="input">newFindForm.jsp</result>
+			<result name="error">newFindForm.jsp</result>
+		</action>
+		<action name="findList" class="com.action.FindAction" method="listAll">
+			<result name="success">listAll.jsp</result>
+			<result name="input">newLostForm.jsp</result>
+			<result name="error">newLostForm.jsp</result>
+		</action>
+<!-- 评论 -->
+		<action name="commentCreate" class="com.action.CommentAction" method="create">
+			<result name="success">detail.jsp</result>
+			<result name="input">detail.jsp</result>
+			<result name="error">detail.jsp</result>
+		</action>
+		<action name="commentList" class="com.action.CommentAction" method="listAll">
+			<result name="success">detail.jsp</result>
+			<result name="input">detail.jsp</result>
+			<result name="error">detail.jsp</result>
+		</action>
+
+	</package>
+	
+
+
+</struts>    

@@ -1,0 +1,276 @@
+#ad{
+	width: 1366px;
+	padding:150px 0 70px 0;
+	text-align:center;
+	font-size:150px;
+}
+
+#register{
+	width:1000px;
+	margin:0 auto;
+}
+
+#login{
+	margin:0 auto;
+	width:250px;
+}
+body{ 
+	background-color:#FFFFFF;
+	width:1366px;
+	margin:0px auto;
+	font-family:"Times New Roman";
+	
+}
+
+a{
+	text-decoration:none;
+}
+
+
+ul{
+	list-style-type:none;
+	
+	
+}
+
+
+/**×ó±ßÀ¸**/
+#info{
+	width:1000px;
+	float:left;
+	position: absolute;
+	top: 60px;
+	
+}
+#info-context{
+	width:80%;
+	height:350px;
+	margin:50px 100px 0px 100px;
+	background-color: #ebebeb;
+	font-size:30px;
+}
+#infoTitle{
+	font-size:30px;
+	padding:0px 30px;
+	height:10%;
+	color:#fff;
+	line-height:100%;
+	background-color: #f9a451;
+}
+#info-context table{
+	padding:20px 30px;
+	font-size:18px;
+	width:50%;
+	height:80%;
+}
+#info-context textarea{
+	min-width: 300px;
+	min-height: 85px;
+}
+
+
+
+
+/**±éÀúµÄitem**/
+
+#list{
+	width:1000px;
+	float:left;
+	position: absolute;
+	top:50px;
+}
+
+#listItem{
+	width:30%;
+	height:200px;
+	padding:1.5%;	
+	float:left;
+	
+}
+#listTitle{
+	background-color: #f9a451;
+	padding:0px 10px;
+	height:40px;
+	
+}
+
+#listTitle-title{
+	width:200px;
+	overflow: hidden;
+	float:left;
+}
+#listItem h3{
+	color:#444;
+	line-height: 40px;
+}
+#listItem table{
+	background-color: #ebebeb;
+	height:160px;
+	width:100%;
+	padding:0px 10px;
+}
+#user-edit{
+	position:relative;
+	right:5px;
+	float:right;
+}
+
+/**box-shadow: 0 1px 3px rgba(3,3,3,.3);**/
+
+
+
+/**ÓÒ±ßÓÃ»§À¸**/
+
+#user_sidebar{
+	background-color:#4D4D4D; 
+	width:366px;
+	height:100%;
+	font-size:20px;
+	float:right;
+}
+#user_sidebar table{
+	border:none;
+	width:100%;
+	height:60px;
+	border-collapse:collapse;
+}
+#user_sidebar td{
+	border:none;
+	height:100%;
+	border:none;
+}
+
+
+#homeLink{
+	height:100%;
+	width:100%;
+	background-color: #ff6600;
+	
+	text-align: center;
+}
+#homeLink a{
+	width:100%;
+	line-height: 100%;
+	color:#FFFFFF;
+	font-size: 20px;
+}
+#myLink-top{
+	height: 60px;
+}
+
+#myLink{
+	background-color: #ddd;
+	height:570px;
+	
+}
+#myLink table{
+	height:100%;
+}
+#myLink tr{
+	line-height: 60px;
+}
+#myLink td{
+	text-align: center;
+		
+}
+
+#myLink img{
+}
+.info-box1{
+	background-color:  #4D4D4D;
+	
+}
+.info-box1 a{
+	color:#FFFFFF;
+}
+.info-box2{
+	color:#000;
+}
+
+#logout{
+	position:absolute;
+	bottom:20px;
+	right:30px;
+	
+}
+#logout a{
+	color:#FFFFFF;
+}
+
+#user_sidebar ul{
+	
+}
+#user_sidebar li{
+	
+}
+
+
+
+/**¶¥²¿µ¼º½À¸**/
+#navi{
+	width:1000px;
+	height:60px;
+	float:left;
+	font-size: 35px;
+	color: #fff;
+	line-height: 60px;
+	
+}
+#navi-lostfind{
+	width:500px;
+	height:60px;
+	float:left;
+	background-color:#363636;
+	
+}
+#navi-else{
+	width:500px;
+	height:60px;
+	float:left;
+	background-color:#363636;
+}
+#navi a{
+	
+	color: #FFFFFF;
+}
+
+#login-submit{
+	display:none;
+}
+
+
+
+/**Comment***/
+
+#commentList{
+	margin:50px 100px 0px 100px;
+	width:80%;
+}
+
+#commentTitle{
+	font-size: 30px;
+	padding: 0px 30px;
+	height: 10%;
+	color: #fff;
+	line-height: 100%;
+	background-color: #f9a451;
+}
+#commentBox textarea{
+	min-width: 500px;
+	min-height: 80px;
+}
+#commentList{
+	background-color: #ebebeb;
+}
+#commentList table{
+	witdh:800px;
+	padding: 20px 30px;
+	font-size: 15px;
+	
+}
+#commentList tr{
+	border-bottom: 1px solid white;
+	height:50px;
+	
+}
+
